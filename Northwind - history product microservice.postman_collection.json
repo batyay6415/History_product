@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "c8b4f326-0679-435c-b5c2-9b39fb07929f",
+		"name": "Northwind - history product microservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25513408"
+	},
+	"item": [
+		{
+			"name": "get all product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4001/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get one product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4001/api/products/65624c1e5eff122b35e65d3e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"products",
+						"65624c1e5eff122b35e65d3e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add new product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"banana\",\r\n    \"price\": 9.8,\r\n    \"stock\": 52,\r\n    \"categoryId\": \"5e91e29b9c08fc560ce2cf33\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"red A pple\",\r\n    \"price\": 5.5,\r\n    \"stock\": 300,\r\n    \"categoryId\": \"5e91e29b9c08fc560ce2cf33\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/products/656258f9f9f71a9d63bb71d5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"products",
+						"656258f9f9f71a9d63bb71d5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Amazing pizza\",\r\n    \"price\": 50,\r\n    \"stock\": 15,\r\n    \"categoryId\": \"5e91e29b9c08fc560ce2cf33\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/products/65624e5ba82b96c7e3803868",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"products",
+						"65624e5ba82b96c7e3803868"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all History product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4002/api/history",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4002",
+					"path": [
+						"api",
+						"history"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
